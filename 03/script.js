@@ -67,3 +67,22 @@
 
 
 
+// // T4 //
+
+
+// const percentageOfWorld3 = (countryPopulation) => {
+//     return (countryPopulation / 7900) * 100;
+// }
+
+// const describePopulation = (country, countryPopulation) => {
+//     const percentAge = percentageOfWorld3(countryPopulation);
+//     const description = `${country} has ${countryPopulation} million people,
+//     which is about ${percentAge} of the world`;
+//     console.log(description)
+// }
+
+// const percent1 = describePopulation('china', 1441);
+// const percent2 = describePopulation('russia', 144);
+// const percent3 = describePopulation('emirate', 14);
+
+// /////////
