@@ -127,11 +127,13 @@
 //     return (countryPopulation / 7900) * 100;
 // }
 
-// const percentAges = [percentageOfWorld3(populations[0]), percentageOfWorld3(populations[1]), percentageOfWorld3(populations[2]), percentageOfWorld3(populations[populations.length - 1])]
+// const percentAges = [
+//     percentageOfWorld3(populations[0]), percentageOfWorld3(populations[1]), percentageOfWorld3(populations[2]), percentageOfWorld3(populations[
+//         populations.length - 1])]
 
 // console.log(percentAges)
 
-// /////////
+// // /////////
 
 
 
