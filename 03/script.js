@@ -203,5 +203,14 @@
 // //////////
 
 
+// /// mini ch ///
+// const myCountry = {
+//     country: 'iran',
+//     capital: 'tehran',
+//     language: 'farsi',
+//     population: 85,
+//     neighbors: ['armenia', 'turkey', 'iraq', 'pakistan']
+// }
 
-
+// console.log(`${myCountry.country} has ${myCountry.neighbors.length} neighbors, and the best neighbor is ${myCountry.neighbors[0]}`)
+// /////////////
