@@ -169,11 +169,7 @@
 // //// ch2 ////
 
 // const calcTip = function (tip) {
-//     if (tip >= 50 && tip <= 300) {
-//         return tip * 0.15;
-//     } else {
-//         return tip * 0.2;
-//     }
+//     return tip >= 50 && tip <= 300 ? tip * 0.15 : tip * 0.2;
 // }
 
 // const bills = [125, 555, 44];
