@@ -89,6 +89,13 @@
 
 
 
+
+
+
+
+
+
+
 ///// ch1 /////
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 
@@ -97,10 +104,10 @@ const calcAverage = (a, b, c) => (a + b + c) / 3;
 // const avgKoalas = calcAverage(65, 54, 49);
 
 // Data 2
-const avgDolphins = calcAverage(85, 54, 71);
-const avgKoalas = calcAverage(23, 34, 27);
+const scoreDolphins = calcAverage(85, 54, 71);
+const scoreKoalas = calcAverage(23, 34, 27);
 
-function checkWinner() {
+function checkWinner(avgDolphins, avgKoalas) {
     if (avgDolphins >= 2 * avgKoalas) {
         return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`
     } else if (avgKoalas >= 2 * avgDolphins) {
@@ -109,4 +116,20 @@ function checkWinner() {
         return `no winner`
     }
 }
-console.log(checkWinner())
+console.log(checkWinner(scoreDolphins, scoreKoalas))
+
+////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
