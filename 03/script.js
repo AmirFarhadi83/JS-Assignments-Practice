@@ -187,3 +187,21 @@
 // ////////////
 
 
+
+
+
+
+// //// T7 ////
+// const myCountry = {
+//     country: 'iran',
+//     capital: 'tehran',
+//     language: 'farsi',
+//     population: 85,
+//     neighbors: ['armenia', 'turkey', 'iraq', 'pakistan']
+// }
+// console.log(myCountry);
+// //////////
+
+
+
+
