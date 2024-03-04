@@ -140,10 +140,26 @@
 
 
 
+// //// T6 ////
 
+// const neighbors = ['armenia', 'turkey', 'iraq', 'pakistan']
+// console.log(neighbors)
 
+// neighbors.push('Utopia')
+// console.log(neighbors)
 
+// neighbors.pop()
+// console.log(neighbors)
 
+// if(!neighbors.includes('germany')){
+//     console.log(`'neighbors' array does not include the country ‘Germany’`)
+// }
 
+// console.log(neighbors.indexOf('iraq'))
+
+// neighbors[2]='country of saddam yazid kaafar'
+// console.log(neighbors)
+
+// ////////
 
 
