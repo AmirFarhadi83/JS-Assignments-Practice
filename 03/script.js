@@ -214,3 +214,22 @@
 
 // console.log(`${myCountry.country} has ${myCountry.neighbors.length} neighbors, and the best neighbor is ${myCountry.neighbors[0]}`)
 // /////////////
+
+
+
+
+
+// /// T8 ///
+// const myCountry = {
+//     country: 'iran',
+//     capital: 'tehran',
+//     language: 'farsi',
+//     population: 85,
+//     neighbors: ['armenia', 'turkey', 'iraq', 'pakistan']
+// }
+// myCountry.population = myCountry.population + 2;
+// myCountry['population'] = myCountry['population'] - 2;
+
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}`);
+
+// /////////////
