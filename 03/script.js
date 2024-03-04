@@ -86,3 +86,27 @@
 // const percent3 = describePopulation('emirate', 14);
 
 // /////////
+
+
+
+///// ch1 /////
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+// // Data 1
+// const avgDolphins = calcAverage(44, 23, 71);
+// const avgKoalas = calcAverage(65, 54, 49);
+
+// Data 2
+const avgDolphins = calcAverage(85, 54, 71);
+const avgKoalas = calcAverage(23, 34, 27);
+
+function checkWinner() {
+    if (avgDolphins >= 2 * avgKoalas) {
+        return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        return `Koalas win (${avgKoalas} vs. ${avgDolphins})`
+    } else {
+        return `no winner`
+    }
+}
+console.log(checkWinner())
