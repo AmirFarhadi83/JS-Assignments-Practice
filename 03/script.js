@@ -92,34 +92,46 @@
 
 
 
+// ///// ch1 /////
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+// // // Data 1
+// // const avgDolphins = calcAverage(44, 23, 71);
+// // const avgKoalas = calcAverage(65, 54, 49);
+
+// // Data 2
+// const scoreDolphins = calcAverage(85, 54, 71);
+// const scoreKoalas = calcAverage(23, 34, 27);
+
+// function checkWinner(avgDolphins, avgKoalas) {
+//     if (avgDolphins >= 2 * avgKoalas) {
+//         return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`
+//     } else if (avgKoalas >= 2 * avgDolphins) {
+//         return `Koalas win (${avgKoalas} vs. ${avgDolphins})`
+//     } else {
+//         return `no winner`
+//     }
+// }
+// console.log(checkWinner(scoreDolphins, scoreKoalas))
+
+// ////////////
 
 
+// //// T5 ////
+
+// const populations = [1441, 342, 85, 130];
+// console.log(populations.length === 4 ? true : false)
 
 
-///// ch1 /////
-const calcAverage = (a, b, c) => (a + b + c) / 3;
+// const percentageOfWorld3 = (countryPopulation) => {
+//     return (countryPopulation / 7900) * 100;
+// }
 
-// // Data 1
-// const avgDolphins = calcAverage(44, 23, 71);
-// const avgKoalas = calcAverage(65, 54, 49);
+// const percentAges = [percentageOfWorld3(populations[0]), percentageOfWorld3(populations[1]), percentageOfWorld3(populations[2]), percentageOfWorld3(populations[populations.length - 1])]
 
-// Data 2
-const scoreDolphins = calcAverage(85, 54, 71);
-const scoreKoalas = calcAverage(23, 34, 27);
+// console.log(percentAges)
 
-function checkWinner(avgDolphins, avgKoalas) {
-    if (avgDolphins >= 2 * avgKoalas) {
-        return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`
-    } else if (avgKoalas >= 2 * avgDolphins) {
-        return `Koalas win (${avgKoalas} vs. ${avgDolphins})`
-    } else {
-        return `no winner`
-    }
-}
-console.log(checkWinner(scoreDolphins, scoreKoalas))
-
-////////////
-
+// /////////
 
 
 
