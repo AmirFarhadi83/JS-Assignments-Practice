@@ -316,19 +316,43 @@
 
 
 
-//// T11 ////
 
-const populations = [1441, 342, 85, 130];
 
-const percentageOfWorld3 = (a) => {
-    return (a / 7900) * 100;
-}
-const percentAges2 = [];
+// //// T11 ////
 
-for (let i = 0; i < populations.length; i++) {
-    percentAges2.push(percentageOfWorld3(populations[i]));
-}
+// const populations = [1441, 342, 85, 130];
 
-console.log(percentAges2)
+// const percentageOfWorld3 = (a) => {
+//     return (a / 7900) * 100;
+// }
+// const percentAges2 = [];
 
-// /////////
+// for (let i = 0; i < populations.length; i++) {
+//     percentAges2.push(percentageOfWorld3(populations[i]));
+// }
+
+// console.log(percentAges2)
+
+// // /////////
+
+
+
+
+
+// //// T12 ////
+
+// const listOfNeighbors = [
+//     ['Canada', 'Mexico'],
+//     ['Spain'],
+//     ['Norway', 'Sweden', 'Russia']]
+// for (let i = 0; i < listOfNeighbors.length; i++) {
+//     for(y=0;y<listOfNeighbors[i].length;y++){
+//         console.log(`neighbor: ${listOfNeighbors[i][y]}`)
+//     }
+// }
+
+// //////////
+
+
+
+
