@@ -373,3 +373,28 @@
 // console.log(percentAges3)
 
 // // /////////
+
+
+
+
+
+
+//// ch4 ////
+
+const calcTip = function (tip) {
+    return tip >= 50 && tip <= 300 ? tip * 0.15 : tip * 0.2;
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const total = [];
+
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]));
+    total.push(bills[i] + tips[i]);
+}
+console.log(tips);
+console.log(total);
+
+////////////
