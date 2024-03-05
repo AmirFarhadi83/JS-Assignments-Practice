@@ -286,7 +286,7 @@
 //     mass: 78,
 //     height: 1.69,
 //     calcBMI: function () {
-//         this.BMI = (this.mass) / (this.height * 2);
+//         this.BMI = (this.mass) / (this.height ** 2);
 //         return this.BMI;
 //     }
 // }
@@ -296,7 +296,7 @@
 //     mass: 92,
 //     height: 1.95,
 //     calcBMI: function () {
-//         this.BMI = (this.mass) / (this.height * 2);
+//         this.BMI = (this.mass) / (this.height ** 2);
 //         return this.BMI;
 //     }
 // }
