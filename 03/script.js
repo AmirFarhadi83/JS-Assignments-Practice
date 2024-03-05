@@ -233,3 +233,47 @@
 // console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}`);
 
 // /////////////
+
+
+
+
+
+/// mini ch2 ///
+
+// const amir = {
+//     firstName: 'amir',
+//     lastName: 'farhadi',
+//     job: 'developer',
+//     birthYear: 2004,
+//     calcAge: function () {
+//         this.age = 2024 - this.birthYear;
+//         return this.age;
+//     },
+//     hasDriverLicense: false,
+//     getSummery: function () {
+//         return `${this.firstName} is a ${this.calcAge()}-years old ${this.job}, and he has${this.hasDriverLicense ? ' a' : "'nt"} driver license`
+//     }
+// }
+// console.log(amir.getSummery())
+
+
+// /// T9 ///
+
+// const myCountry = {
+//     country: 'iran',
+//     capital: 'tehran',
+//     language: 'farsi',
+//     population: 85,
+//     neighbors: ['armenia', 'turkey', 'iraq', 'pakistan'],
+//     describe: function () {
+//         return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighboring countries and a capital called ${this.capital}`
+//     },
+//     checkIsland: function () {
+//         this.isIsland = this.neighbors.length === 0 ? true : false;
+//         return this.isIsland;
+//     }
+// }
+// console.log(myCountry.describe())
+// console.log(myCountry.checkIsland())
+
+// /////////////
