@@ -355,4 +355,21 @@
 
 
 
+//// T13 ////
 
+const populations = [1441, 342, 85, 130];
+
+const percentageOfWorld3 = (a) => {
+    return (a / 7900) * 100;
+}
+const percentAges3 = [];
+
+let i = 0
+while (i < populations.length) {
+    percentAges3.push(percentageOfWorld3(populations[i]));
+    i++
+}
+
+console.log(percentAges3)
+
+// /////////
