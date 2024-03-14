@@ -20,6 +20,21 @@ const scoreMines = () => {
   document.querySelector('.score').textContent = score;
 };
 
+const lostGame = () => {
+  message.textContent = '💥 you lost the game';
+  scoreContent.textContent = 0;
+};
+
+const tooHigh = () => {
+  message.textContent = '📈 Too High!';
+  scoreMines();
+};
+
+const tooLow = () => {
+  message.textContent = '📉 Too Low!';
+  scoreMines();
+};
+
 document.querySelector('.number').textContent = secretNumber;
 
 document.querySelector('.check').addEventListener('click', () => {
@@ -30,20 +45,8 @@ document.querySelector('.check').addEventListener('click', () => {
   } else if (guess === secretNumber) {
     message.textContent = '🎉 Correct Number!';
   } else if (guess > secretNumber) {
-    if (score > 1) {
-      message.textContent = '📈 Too High!';
-      scoreMines();
-    } else {
-      message.textContent = '💥 you lost the game';
-      scoreContent.textContent = 0;
-    }
+    score > 1 ? tooHigh() : lostGame();
   } else if (guess < secretNumber) {
-    if (score > 1) {
-      message.textContent = '📉 Too Low!';
-      scoreMines();
-    } else {
-      message.textContent = '💥 you lost the game';
-      scoreContent.textContent = 0;
-    }
+    score > 1 ? tooLow() : lostGame();
   }
 });
