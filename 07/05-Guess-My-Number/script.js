@@ -8,7 +8,7 @@
 
 // console.log(document.querySelector('.guess').value = 2)
 
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 let message = document.querySelector('.message');
 let scoreContent = document.querySelector('.score');
@@ -42,7 +42,14 @@ const winStyles = () => {
 };
 
 const reset = () => {
-    window.location.reload();
+    // window.location.reload();
+    score = 20;
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
+    scoreContent.textContent = score;
+    number.textContent = '?';
+    message.textContent = "Start guessing...";
+    document.querySelector('body').style.backgroundColor = "#222";
+    document.querySelector('.number').style.width= "15rem";
 }
 
 document.querySelector('.again').addEventListener('click', () => {
