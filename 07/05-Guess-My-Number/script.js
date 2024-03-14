@@ -45,6 +45,10 @@ const reset = () => {
     window.location.reload();
 }
 
+document.querySelector('.again').addEventListener('click', () => {
+    reset();
+})
+
 document.querySelector('.check').addEventListener('click', () => {
   const guess = Number(document.querySelector('.guess').value);
 
