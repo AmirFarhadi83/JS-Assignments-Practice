@@ -12,6 +12,7 @@ const secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 let message = document.querySelector('.message');
 let scoreContent = document.querySelector('.score');
+let number = document.querySelector('.number');
 
 let score = 20;
 
@@ -35,7 +36,12 @@ const tooLow = () => {
   scoreMines();
 };
 
-document.querySelector('.number').textContent = secretNumber;
+const winStyles = () => {
+  document.querySelector('body').style.backgroundColor = '#60b347';
+  document.querySelector('.number').style.width = '30rem';
+};
+
+
 
 document.querySelector('.check').addEventListener('click', () => {
   const guess = Number(document.querySelector('.guess').value);
@@ -44,6 +50,8 @@ document.querySelector('.check').addEventListener('click', () => {
     message.textContent = '⛔ No Number';
   } else if (guess === secretNumber) {
     message.textContent = '🎉 Correct Number!';
+      winStyles();
+      number.textContent = secretNumber;
   } else if (guess > secretNumber) {
     score > 1 ? tooHigh() : lostGame();
   } else if (guess < secretNumber) {
