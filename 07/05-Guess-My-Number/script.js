@@ -41,7 +41,9 @@ const winStyles = () => {
   document.querySelector('.number').style.width = '30rem';
 };
 
-
+const reset = () => {
+    window.location.reload();
+}
 
 document.querySelector('.check').addEventListener('click', () => {
   const guess = Number(document.querySelector('.guess').value);
