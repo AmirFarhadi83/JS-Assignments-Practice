@@ -14,7 +14,7 @@ let message = document.querySelector('.message');
 let scoreContent = document.querySelector('.score');
 
 let score = 20;
-console.log(score);
+
 const scoreMines = () => {
   score--;
   document.querySelector('.score').textContent = score;
