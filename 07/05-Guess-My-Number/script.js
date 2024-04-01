@@ -8,36 +8,47 @@
 
 // console.log(document.querySelector('.guess').value = 2)
 
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
+
+
+
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 20;
+let highScore = 0;
 const message = document.querySelector('.message');
 const scoreContent = document.querySelector('.score');
 const highScoreContent = document.querySelector('.highScore');
 const number = document.querySelector('.number');
 
-let score = 20;
-let highScore = 0;
+
+
+
+
+
 
 const scoreMines = () => {
   score--;
-  document.querySelector('.score').textContent = score;
+  scoreContent.textContent = score;
 };
 
 const lostGame = () => {
-  message.textContent = '💥 you lost the game';
+  displayMessage('💥 you lost the game');
   scoreContent.textContent = 0;
 };
 
 const tooHigh = () => {
-  message.textContent = '📈 Too High!';
+  displayMessage('📈 Too High!');
   scoreMines();
 };
 
 const tooLow = () => {
-  message.textContent = '📉 Too Low!';
+  displayMessage('📉 Too Low!');
   scoreMines();
 };
 
+const displayMessage = (message) => {
+  message.textContent  = message;
+}
 const winStyles = () => {
   document.querySelector('body').style.backgroundColor = '#60b347';
   document.querySelector('.number').style.width = '30rem';
@@ -49,7 +60,7 @@ const reset = () => {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   scoreContent.textContent = score;
   number.textContent = '?';
-  message.textContent = 'Start guessing...';
+  displayMessage('Start guessing...');
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
   document.querySelector('.guess').value = '';
@@ -63,9 +74,9 @@ document.querySelector('.check').addEventListener('click', () => {
   const guess = Number(document.querySelector('.guess').value);
 
   if (!guess) {
-    message.textContent = '⛔ No Number';
+    displayMessage('⛔ No Number');
   } else if (guess === secretNumber) {
-    message.textContent = '🎉 Correct Number!';
+    displayMessage('🎉 Correct Number!');
     winStyles();
     number.textContent = secretNumber;
     if (score > highScore) {
