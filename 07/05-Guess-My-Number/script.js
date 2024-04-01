@@ -10,10 +10,10 @@
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
-let message = document.querySelector('.message');
-let scoreContent = document.querySelector('.score');
-let highScoreContent = document.querySelector('.highScore');
-let number = document.querySelector('.number');
+const message = document.querySelector('.message');
+const scoreContent = document.querySelector('.score');
+const highScoreContent = document.querySelector('.highScore');
+const number = document.querySelector('.number');
 
 let score = 20;
 let highScore = 0;
