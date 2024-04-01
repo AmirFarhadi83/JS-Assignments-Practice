@@ -33,8 +33,8 @@ const tooLow = () => {
   scoreMines();
 };
 
-const displayMessage = (message) => {
-  message.textContent = message;
+const displayMessage = (message1) => {
+  message.textContent = message1;
 };
 const winStyles = () => {
   document.querySelector('body').style.backgroundColor = '#60b347';
