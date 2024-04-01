@@ -9,10 +9,9 @@ const message = document.querySelector('.message');
 const scoreContent = document.querySelector('.score');
 const highScoreContent = document.querySelector('.highScore');
 const number = document.querySelector('.number');
-const guessContent= document.querySelector('.guess');
+const guessContent = document.querySelector('.guess');
 
 //////////////////////////////////
-
 
 const scoreMines = () => {
   score--;
@@ -35,8 +34,8 @@ const tooLow = () => {
 };
 
 const displayMessage = (message) => {
-  message.textContent  = message;
-}
+  message.textContent = message;
+};
 const winStyles = () => {
   document.querySelector('body').style.backgroundColor = '#60b347';
   number.style.width = '30rem';
