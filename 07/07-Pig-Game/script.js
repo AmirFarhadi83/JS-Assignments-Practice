@@ -16,9 +16,9 @@ diceEl.classList.add('hidden');
 musicIconEl.onclick = () => {
     if (musicEl.paused) {
         musicEl.play();
-        musicIconEl.src = 'icons8-pause-100.png';
+        musicIconEl.src = './assets/img/icons8-pause-100.png';
     } else{
         musicEl.pause();
-        musicIconEl.src = 'icons8-play-100.png';
+        musicIconEl.src = './assets/img/icons8-play-100.png';
     }
 }
