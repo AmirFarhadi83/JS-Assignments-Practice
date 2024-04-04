@@ -17,8 +17,6 @@ body {
   width: 100vw;
   height: 100vh;
   color: #333;
-  /* background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%); */
-
   background: linear-gradient(
     to top left,
     red,
@@ -30,10 +28,6 @@ body {
   );
   background-size: 400% 400%;
   animation: animate 8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-
-  /* background: linear-gradient(135deg, #14ffe9, , #ff00e0);
-  animation: animate 1.5s linear infinite; */
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,21 +70,8 @@ main {
 .score {
   font-size: 8rem;
   font-weight: 300;
-  /* color: #c7365f; */
   margin-bottom: auto;
   color: #ffffff85 !important;
-  /* background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent; */
-  /* background-image: linear-gradient(
-    to top left,
-    red,
-    rgb(0, 106, 255),
-    purple,
-    gold,
-    red
-  );
-  animation: anim 15s ease infinite; */
 }
 
 .player--active {
@@ -108,7 +89,6 @@ main {
 }
 
 .current {
-  /* background-color: #c7365f; */
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
@@ -128,14 +108,6 @@ main {
   );
   background-size: 720% 720%;
   animation: animate 8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-
-  /* background-color: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); */
-
-  /* background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .current-label {
@@ -253,27 +225,3 @@ main {
     background-position: 0% 50%;
   }
 }
-
-/* @keyframes anim {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 100% 0;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0 100%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-} */
-
-/* @keyframes animate {
-  100% {
-    filter: hue-rotate(360deg);
-  }
-} */
