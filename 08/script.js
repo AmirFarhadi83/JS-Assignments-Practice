@@ -22,13 +22,26 @@
 // const firstName = 'Amir';
 // calcAge(1988);
 
+// // Variables
+// console.log(me);
+// // console.log(job);
+// // console.log(year);
 
+// var me = 'Amir';
+// let job = 'developer';
+// const year = 2004;
 
+// // Functions
+// console.log(addDecl(2, 3));
+// // console.log(addExp(2, 3));
+// // console.log(addArrow(2, 3));
 
-console.log(me);
-console.log(job);
-console.log(year);
+// function addDecl(a, b) {
+//   return a + b;
+// }
 
-var me = 'Amir';
-let job = 'developer';
-const year = 2004;
+// const addExp = function (a, b) {
+//   return a + b;
+// };
+
+// const addArrow = (a, b) => a + b;
