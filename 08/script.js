@@ -46,32 +46,32 @@
 
 // const addArrow = (a, b) => a + b;
 
-const amir = {
-  firstName: 'Amir',
-  year: 1987,
-  calcAge: function () {
-    console.log(2037 - this.year);
+// const amir = {
+//   firstName: 'Amir',
+//   year: 1987,
+//   calcAge: function () {
+//     console.log(2037 - this.year);
 
-    // // Solution 1
-    //   const self = this;
-    // const isMillennial = function () {
-    //   console.log(self);
-    //       console.log(self.year >= 1981 && self.year <= 1996);
-    // //     console.log(this);
-    // //   console.log(this.year >= 1981 && this.year <= 1996);
-    // };
+//     // // Solution 1
+//     //   const self = this;
+//     // const isMillennial = function () {
+//     //   console.log(self);
+//     //       console.log(self.year >= 1981 && self.year <= 1996);
+//     // //     console.log(this);
+//     // //   console.log(this.year >= 1981 && this.year <= 1996);
+//     // };
 
-    // Solution 2
-    const isMillennial = () => {
-      console.log(this);
-      console.log(this.year >= 1981 && this.year <= 1996);
-    };
+//     // Solution 2
+//     const isMillennial = () => {
+//       console.log(this);
+//       console.log(this.year >= 1981 && this.year <= 1996);
+//     };
       
-    isMillennial();
-  },
-  greet: function () {
-    console.log(`Hey ${this.firstName}`);
-  },
-};
+//     isMillennial();
+//   },
+//   greet: function () {
+//     console.log(`Hey ${this.firstName}`);
+//   },
+// };
 
-amir.calcAge();
+// amir.calcAge();
