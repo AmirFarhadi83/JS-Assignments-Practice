@@ -66,7 +66,7 @@
 //       console.log(this);
 //       console.log(this.year >= 1981 && this.year <= 1996);
 //     };
-      
+
 //     isMillennial();
 //   },
 //   greet: function () {
@@ -75,3 +75,37 @@
 // };
 
 // amir.calcAge();
+
+// Primitive Types
+let lastName = 'williams';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName, oldLastName);
+
+// References Types
+// const jessica = {
+//     firstName: 'Jessica',
+//     lastName: 'Williams',
+//     age: 27,
+// };
+// const marriedJessica = jessica;
+// marriedJessica.lastName = 'Davis';
+// console.log('Before marriage: ', jessica);
+// console.log('After marriage: ', marriedJessica);
+
+// Copying Objects
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Ali', 'John'],
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('ALice');
+
+console.log('Before marriage: ', jessica2);
+console.log('After marriage: ', jessicaCopy);
