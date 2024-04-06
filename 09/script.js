@@ -41,44 +41,48 @@ const restaurant = {
     );
   },
 };
-restaurant.orderDelivery({
-  time: '22:30',
-  address: 'mashhad',
-  mainIndex: 2,
-  starterIndex: 2,
-});
 
-restaurant.orderDelivery({
-  address: 'tehran',
-  starterIndex: 1,
-});
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
 
-const { name, openingHours, categories } = restaurant;
-console.log(name, openingHours, categories);
+// restaurant.orderDelivery({
+//   time: '22:30',
+//   address: 'mashhad',
+//   mainIndex: 2,
+//   starterIndex: 2,
+// });
 
-const {
-  name: restaurantName,
-  openingHours: hours,
-  categories: tags,
-} = restaurant;
-console.log(restaurantName, hours, tags);
+// restaurant.orderDelivery({
+//   address: 'tehran',
+//   starterIndex: 1,
+// });
 
-// Default Values
-const { menu = [], starterMenu: starters = [] } = restaurant;
-console.log(menu, starters);
+// const { name, openingHours, categories } = restaurant;
+// console.log(name, openingHours, categories);
 
-// Mutating Variables
-let a = 111;
-let b = 999;
-const obj = { a: 23, b: 7, c: 14 };
-({ a, b } = obj);
-console.log(a, b);
+// const {
+//   name: restaurantName,
+//   openingHours: hours,
+//   categories: tags,
+// } = restaurant;
+// console.log(restaurantName, hours, tags);
 
-// Nested Objects
-const {
-  sat: { open: o, close: c },
-} = openingHours;
-console.log(o, c);
+// // Default Values
+// const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
+
+// // Mutating Variables
+// let a = 111;
+// let b = 999;
+// const obj = { a: 23, b: 7, c: 14 };
+// ({ a, b } = obj);
+// console.log(a, b);
+
+// // Nested Objects
+// const {
+//   sat: { open: o, close: c },
+// } = openingHours;
+// console.log(o, c);
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
