@@ -50,45 +50,84 @@ const restaurant = {
 };
 
 //////////////////////////////////////////////////
+// Nullish Operators
+//////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////
+// Short Circuiting (&& and ||) Operators
+//////////////////////////////////////////////////
+
+console.log('---- OR ----');
+// Use ANY data type, return ANY data type,short-circuiting
+console.log(3 || 'Amir');
+console.log('' || 'Amir');
+console.log(true || 0);
+console.log(undefined || null);
+console.log(undefined || 0 || '' || 'HI' || 23 || null);
+
+restaurant.numGuests = 0;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log('---- AND ----');
+console.log(0 && 'Amir');
+console.log(7 && 'Amir');
+
+console.log("HI" && 23 && null && "Amir");
+
+// Practical Example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'cheese');
+};
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'cheese');
+
+
+//////////////////////////////////////////////////
 // Rest Operator
 //////////////////////////////////////////////////
 
-// 1) Destructuring
-// SPREAD, Because on RIGHT side of =
-const arr = [1, 2, ...[3, 4]];
+// // 1) Destructuring
+// // SPREAD, Because on RIGHT side of =
+// const arr = [1, 2, ...[3, 4]];
 
-// REST, Because on LEFT side of =
-const [a, b, ...others] = [1, 2, 3, 4, 5];
-console.log(a, b, others);
+// // REST, Because on LEFT side of =
+// const [a, b, ...others] = [1, 2, 3, 4, 5];
+// console.log(a, b, others);
 
-const [pizza, , risotto, ...otherFood] = [
-  ...restaurant.mainMenu,
-  ...restaurant.starterMenu,
-];
-console.log(pizza, risotto, otherFood);
+// const [pizza, , risotto, ...otherFood] = [
+//   ...restaurant.mainMenu,
+//   ...restaurant.starterMenu,
+// ];
+// console.log(pizza, risotto, otherFood);
 
-// Objects
-const { sat, ...weekdays } = restaurant.openingHours;
-console.log(weekdays);
+// // Objects
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(weekdays);
 
-// 2) Functions
+// // 2) Functions
 
-const add = function (...numbers) {
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++){
-    sum += numbers[i];
-  }
-  console.log(sum);
-}
-add(2, 3);
-add(2, 3, 4, 5, 5);
-add(2, 3, 4, 5, 6, 6, 7, 8);
+// const add = function (...numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++){
+//     sum += numbers[i];
+//   }
+//   console.log(sum);
+// }
+// add(2, 3);
+// add(2, 3, 4, 5, 5);
+// add(2, 3, 4, 5, 6, 6, 7, 8);
 
-const x = [23, 5, 7];
-add(...x);
+// const x = [23, 5, 7];
+// add(...x);
 
-restaurant.orderPizza('mushrooms', 'cheese', 'olives');
-restaurant.orderPizza('mushrooms');
+// restaurant.orderPizza('mushrooms', 'cheese', 'olives');
+// restaurant.orderPizza('mushrooms');
 
 //////////////////////////////////////////////////
 // Spread Operator
