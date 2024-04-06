@@ -66,6 +66,7 @@ const mainMenuCopy = [...restaurant.mainMenu];
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
 
+
 //////////////////////////////////////////////////
 // Destructure Object
 //////////////////////////////////////////////////
