@@ -46,52 +46,73 @@ const restaurant = {
 };
 
 //////////////////////////////////////////////////
+// Rest Operator
+//////////////////////////////////////////////////
+
+// SPREAD, Because on RIGHT side of =
+const arr = [1, 2, ...[3, 4]];
+
+// REST, Because on LEFT side of =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, otherFood);
+
+// Objects
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
+//////////////////////////////////////////////////
 // Spread Operator
 //////////////////////////////////////////////////
 
-const arr = [7, 8, 9];
-const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
-console.log(badNewArr);
+// const arr = [7, 8, 9];
+// const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+// console.log(badNewArr);
 
-const newArr = [1, 2, ...arr];
-console.log(newArr);
+// const newArr = [1, 2, ...arr];
+// console.log(newArr);
 
-console.log(...newArr);
-console.log(1, 2, 7, 8, 9);
+// console.log(...newArr);
+// console.log(1, 2, 7, 8, 9);
 
-const newMenu = [...restaurant.mainMenu, 'Gnocci'];
-console.log(newMenu);
+// const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+// console.log(newMenu);
 
-// Copy Array
-const mainMenuCopy = [...restaurant.mainMenu];
+// // Copy Array
+// const mainMenuCopy = [...restaurant.mainMenu];
 
-// Join 2 Array
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-console.log(menu);
+// // Join 2 Array
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// console.log(menu);
 
-// Iterables: Arrays, Strings, Sets, Maps, NOT Objects
-const str = 'Amir';
-const letters = [...str, ' ', 'F.'];
-console.log(letters);
-console.log(...str);
+// // Iterables: Arrays, Strings, Sets, Maps, NOT Objects
+// const str = 'Amir';
+// const letters = [...str, ' ', 'F.'];
+// console.log(letters);
+// console.log(...str);
 
-// Example
-// const ingredients = [
-//   prompt("let's Make Pasta! Ingredient 1?"),
-//   prompt('Ingredient 2?'),
-//   prompt('Ingredient 3?'),
-// ];
-// console.log(ingredients);
-// restaurant.orderPasta(...ingredients);
+// // Example
+// // const ingredients = [
+// //   prompt("let's Make Pasta! Ingredient 1?"),
+// //   prompt('Ingredient 2?'),
+// //   prompt('Ingredient 3?'),
+// // ];
+// // console.log(ingredients);
+// // restaurant.orderPasta(...ingredients);
 
-// Objects
-const newRestaurant = { foundedIn: 2000, ...restaurant, founder: 'Ali' };
-console.log(newRestaurant);
+// // Objects
+// const newRestaurant = { foundedIn: 2000, ...restaurant, founder: 'Ali' };
+// console.log(newRestaurant);
 
-const restaurantCopy = { ...restaurant };
-restaurantCopy.name = 'kfc';
-console.log(restaurantCopy.name);
-console.log(restaurant.name);
+// const restaurantCopy = { ...restaurant };
+// restaurantCopy.name = 'kfc';
+// console.log(restaurantCopy.name);
+// console.log(restaurant.name);
 
 //////////////////////////////////////////////////
 // Destructure Object
