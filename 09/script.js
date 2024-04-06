@@ -33,7 +33,7 @@ const restaurant = {
 };
 
 const { name, openingHours, categories } = restaurant;
-console.log(name, categories, openingHours);
+console.log(name, openingHours, categories);
 
 const {
   name: restaurantName,
@@ -42,6 +42,14 @@ const {
 } = restaurant;
 console.log(restaurantName, hours, tags);
 
+// Default Values
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
+
+// Mutating Variables
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
 
 
 
@@ -50,12 +58,8 @@ console.log(restaurantName, hours, tags);
 
 
 
-
-
-
-
-
-
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
 
 // const arr = [1, 2, 3];
 // const a = arr[0];
@@ -92,3 +96,6 @@ console.log(restaurantName, hours, tags);
 // // Default Values
 // const [p = 1, q = 1, r = 1] = [8, 9];
 // console.log(p, q, r);
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
