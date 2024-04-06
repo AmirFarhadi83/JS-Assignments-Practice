@@ -40,6 +40,9 @@ const restaurant = {
       `Order Received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be Delivered to ${address} at ${time}`
     );
   },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Hey There is Your Pasta with ${ing1}, ${ing2} and ${ing3}`);
+  },
 };
 
 //////////////////////////////////////////////////
@@ -66,6 +69,29 @@ const mainMenuCopy = [...restaurant.mainMenu];
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
 
+// Iterables: Arrays, Strings, Sets, Maps, NOT Objects
+const str = 'Amir';
+const letters = [...str, ' ', 'F.'];
+console.log(letters);
+console.log(...str);
+
+// Example
+// const ingredients = [
+//   prompt("let's Make Pasta! Ingredient 1?"),
+//   prompt('Ingredient 2?'),
+//   prompt('Ingredient 3?'),
+// ];
+// console.log(ingredients);
+// restaurant.orderPasta(...ingredients);
+
+// Objects
+const newRestaurant = { foundedIn: 2000, ...restaurant, founder: 'Ali' };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'kfc';
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
 
 //////////////////////////////////////////////////
 // Destructure Object
