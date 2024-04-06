@@ -32,38 +32,56 @@ const restaurant = {
   },
 };
 
-const arr = [1, 2, 3];
-const a = arr[0];
-const b = arr[1];
-const c = arr[2];
-console.log(arr);
 
-const [x, y, z] = arr;
-console.log(x, y, z);
 
-let [main, , secondary] = restaurant.categories;
-console.log(main, secondary);
 
-// Switching Variables
-// const temp = main;
-// main = secondary;
-// secondary = temp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const arr = [1, 2, 3];
+// const a = arr[0];
+// const b = arr[1];
+// const c = arr[2];
+// console.log(arr);
+
+// const [x, y, z] = arr;
+// console.log(x, y, z);
+
+// let [main, , secondary] = restaurant.categories;
 // console.log(main, secondary);
 
-[main, secondary] = [secondary, main];
-console.log(main, secondary);
+// // Switching Variables
+// // const temp = main;
+// // main = secondary;
+// // secondary = temp;
+// // console.log(main, secondary);
 
-// Receive 2 Return Values from a Function
-const [starter, mainCourse] = restaurant.order(2, 0);
-console.log(starter, mainCourse);
+// [main, secondary] = [secondary, main];
+// console.log(main, secondary);
 
-// Nested Destructuring
-const nested = [2, 4, [5, 6]];
-// const [i, , j] = nested;
-// console.log(i,j);
-const [i, , [j, k]] = nested;
-console.log(i, j, k);
+// // Receive 2 Return Values from a Function
+// const [starter, mainCourse] = restaurant.order(2, 0);
+// console.log(starter, mainCourse);
 
-// Default Values
-const [p = 1, q = 1, r = 1] = [8, 9];
-console.log(p, q, r);
+// // Nested Destructuring
+// const nested = [2, 4, [5, 6]];
+// // const [i, , j] = nested;
+// // console.log(i,j);
+// const [i, , [j, k]] = nested;
+// console.log(i, j, k);
+
+// // Default Values
+// const [p = 1, q = 1, r = 1] = [8, 9];
+// console.log(p, q, r);
