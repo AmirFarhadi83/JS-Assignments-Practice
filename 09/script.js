@@ -29,23 +29,18 @@ const restaurant = {
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
   // ES6 Object
   openingHours,
-  order: function (starterIndex, mainIndex) {
+  order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
-  orderDelivery: function ({
-    starterIndex = 1,
-    mainIndex = 0,
-    time = '20:00',
-    address,
-  }) {
+  orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
     console.log(
       `Order Received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be Delivered to ${address} at ${time}`
     );
   },
-  orderPasta: function (ing1, ing2, ing3) {
+  orderPasta(ing1, ing2, ing3) {
     console.log(`Hey There is Your Pasta with ${ing1}, ${ing2} and ${ing3}`);
   },
-  orderPizza: function (mainIngredient, ...otherIngredients) {
+  orderPizza(mainIngredient, ...otherIngredients) {
     console.log(mainIngredient);
     console.log(otherIngredients);
   },
@@ -54,8 +49,6 @@ const restaurant = {
 //////////////////////////////////////////////////
 // Enhanced Object Literals
 //////////////////////////////////////////////////
-
-
 
 //////////////////////////////////////////////////
 // Looping Arrays
