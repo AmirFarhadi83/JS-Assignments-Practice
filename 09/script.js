@@ -49,6 +49,88 @@ const restaurant = {
 };
 
 //////////////////////////////////////////////////
+// Coding Challenge #2
+//////////////////////////////////////////////////
+
+const game = {
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],
+  ],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+
+// 1.
+let i = 0;
+for (const num of game.scored) {
+  i++;
+  console.log(`Goal ${i}: ${num}`);
+}
+
+// 2.
+let y = 0;
+for (const x of Object.values(game.odds)) {
+  y += x;
+  console.log(x);
+}
+console.log(y);
+
+// 3.
+let x = 0;
+for (const [team, score] of Object.entries(game.odds)) {
+  x++;
+  console.log(
+    `Odd of ${x === 1 || x === 3 ? 'victory' : 'draw'} ${
+      x === 1 || x === 3
+        ? x === 1
+          ? 'Bayern Munich'
+          : 'Borrussia Dortmund'
+        : ''
+    }: ${score}`
+  );
+};
+
+// 4.
+// let r=0
+// for (const w of game.scored) {
+
+// }
+
+
+//////////////////////////////////////////////////
 // Looping Objects Keys, Values and Entries
 //////////////////////////////////////////////////
 
