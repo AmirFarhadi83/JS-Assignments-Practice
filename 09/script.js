@@ -49,6 +49,57 @@ const restaurant = {
 };
 
 //////////////////////////////////////////////////
+// Coding Challenge #3
+//////////////////////////////////////////////////
+
+const gameEvents = new Map([
+  [17, '⚽ GOAL'],
+  [36, '🔁 Substitution'],
+  [47, '⚽ GOAL'],
+  [61, '🔁 Substitution'],
+  [64, '🔶 Yellow card'],
+  [69, '🔴 Red card'],
+  [70, '🔁 Substitution'],
+  [72, '🔁 Substitution'],
+  [76, '⚽ GOAL'],
+  [80, '⚽ GOAL'],
+  [92, '🔶 Yellow card'],
+]);
+
+// 1.
+const gameArr = [gameEvents.values()];
+const [[, ...e]] = gameArr;
+const events = new Set(e);
+console.log(`There is ${events.size} events :${[...events]}`);
+
+// 2.
+gameEvents.delete(64);
+console.log(gameEvents);
+
+// 3.
+const task3 = function () {
+  let average = 0;
+  let eventFot = [];
+  for (const [x, eve] of gameEvents) {
+    average += x;
+    eventFot.push(eve);
+  }
+  average /= 90;
+  const niceAve = Math.round(average);
+  for (let i = 0; i < eventFot.length; i++) {
+    console.log(`An ${eventFot[i]} happened, on
+  average, every ${niceAve} minutes`);
+  }
+};
+task3();
+
+// 4.
+for (const [x, eve] of gameEvents) {
+  const half = x < 45 ? '[FIRST HALF]' : '[SECOND HALF]';
+  console.log(`${half} ${x}: ${eve}`);
+}
+
+//////////////////////////////////////////////////
 // Map:  Iteration
 //////////////////////////////////////////////////
 
