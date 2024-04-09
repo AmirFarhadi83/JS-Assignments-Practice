@@ -67,10 +67,9 @@ const gameEvents = new Map([
 ]);
 
 // 1.
-const gameArr = [gameEvents.values()];
-const [[, ...e]] = gameArr;
-const events = new Set(e);
-console.log(`There is ${events.size} events :${[...events]}`);
+const events = [...new Set(gameEvents.values())];
+console.log(events);
+// console.log(`There is ${events.length} events :${[...events]}`);
 
 // 2.
 gameEvents.delete(64);
