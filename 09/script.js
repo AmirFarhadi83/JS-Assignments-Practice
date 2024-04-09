@@ -68,34 +68,29 @@ const gameEvents = new Map([
 
 // 1.
 const events = [...new Set(gameEvents.values())];
-console.log(events);
+// console.log(events);
 // console.log(`There is ${events.length} events :${[...events]}`);
 
 // 2.
 gameEvents.delete(64);
-console.log(gameEvents);
+// console.log(gameEvents);
 
 // 3.
-const task3 = function () {
-  let average = 0;
-  let eventFot = [];
-  for (const [x, eve] of gameEvents) {
-    average += x;
-    eventFot.push(eve);
-  }
-  average /= 90;
-  const niceAve = Math.round(average);
-  for (let i = 0; i < eventFot.length; i++) {
-    console.log(`An ${eventFot[i]} happened, on
-  average, every ${niceAve} minutes`);
-  }
-};
-task3();
+// let max = 0;
+// for (const [x] of gameEvents) {
+//   if (x > max) max = x;
+// }
+// const time = max;
+
+const time = [...gameEvents.keys()].pop();
+
+console.log(`An event happened, on
+average, every ${time / gameEvents.size} minutes`);
 
 // 4.
 for (const [x, eve] of gameEvents) {
-  const half = x < 45 ? '[FIRST HALF]' : '[SECOND HALF]';
-  console.log(`${half} ${x}: ${eve}`);
+  const half = x <= 45 ? 'FIRST' : 'SECOND';
+  console.log(`[${half} HALF] ${x}: ${eve}`);
 }
 
 //////////////////////////////////////////////////
