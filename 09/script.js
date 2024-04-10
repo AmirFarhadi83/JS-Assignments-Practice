@@ -56,6 +56,32 @@ document.body.append(document.createElement('textarea'));
 document.body.append(document.createElement('button'));
 const text = document.querySelector('textarea').value;
 
+const textFunc = function (text) {
+  const strLow = text.toLowerCase();
+  const strSplit = strLow.split('_');
+  const strCamel = [];
+  const strArr = [];
+
+  for (const t of strSplit) {
+    strCamel.push(t.replace(t[0], t[0].toUpperCase()));
+  }
+
+  const newStr = strCamel
+    .join('')
+    .replace(strCamel[0], strCamel[0].toLowerCase());
+
+  strArr.push(newStr.split('\n'));
+  console.log(strArr);
+
+  // console.log(strCamel);
+  // console.log(newStr);
+};
+
+textFunc('ali_Reza');
+textFunc(
+  'underscore_case\nfirst_name\nSome_Variable\ncalculate_AGE\ndelayed_departure'
+);
+
 //////////////////////////////////////////////////
 // Strings Part-3
 //////////////////////////////////////////////////
