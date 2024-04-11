@@ -70,8 +70,13 @@ const textFunc = function (text) {
     .join('')
     .replace(strCamel[0], strCamel[0].toLowerCase());
 
+  for (const i of newStr) {
+    i.padStart(25, "+");
+    console.log(i);
+  }
   strArr.push(newStr.split('\n'));
   console.log(strArr);
+  console.log(newStr);
 
   // console.log(strCamel);
   // console.log(newStr);
