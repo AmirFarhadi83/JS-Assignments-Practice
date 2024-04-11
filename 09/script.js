@@ -52,59 +52,59 @@ const restaurant = {
 // Coding Challenge #4
 //////////////////////////////////////////////////
 
-document.body.append(document.createElement('textarea'));
-document.body.append(document.createElement('button'));
+// document.body.append(document.createElement('textarea'));
+// document.body.append(document.createElement('button'));
 
-document.querySelector('button').addEventListener('click', function () {
-  const text = document.querySelector('textarea').value;
-  const rows = text.split('\n');
+// document.querySelector('button').addEventListener('click', function () {
+//   const text = document.querySelector('textarea').value;
+//   const rows = text.split('\n');
 
-  for (const [i, row] of rows.entries()) {
-    const [first, second] = row.toLowerCase().trim().split('_');
-    const output = `${first}${second.replace(
-      second[0],
-      second[0].toUpperCase()
-    )}`;
-    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
-  }
-});
-
-// underscore_case
-//  first_name
-// Some_Variable
-//   calculate_AGE
-// delayed_departure
-
-// const textFunc = function (text) {
-//   const strLow = text.toLowerCase();
-//   const strSplit = strLow.split('_');
-//   const strCamel = [];
-//   const strArr = [];
-
-//   for (const t of strSplit) {
-//     strCamel.push(t.replace(t[0], t[0].toUpperCase()));
+//   for (const [i, row] of rows.entries()) {
+//     const [first, second] = row.toLowerCase().trim().split('_');
+//     const output = `${first}${second.replace(
+//       second[0],
+//       second[0].toUpperCase()
+//     )}`;
+//     console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
 //   }
+// });
 
-//   const newStr = strCamel
-//     .join('')
-//     .replace(strCamel[0], strCamel[0].toLowerCase());
+// // underscore_case
+// //  first_name
+// // Some_Variable
+// //   calculate_AGE
+// // delayed_departure
 
-//   for (const i of newStr) {
-//     i.padStart(25, "+");
-//     console.log(i);
-//   }
-//   strArr.push(newStr.split('\n'));
-//   console.log(strArr);
-//   console.log(newStr);
+// // const textFunc = function (text) {
+// //   const strLow = text.toLowerCase();
+// //   const strSplit = strLow.split('_');
+// //   const strCamel = [];
+// //   const strArr = [];
 
-//   // console.log(strCamel);
-//   // console.log(newStr);
-// };
+// //   for (const t of strSplit) {
+// //     strCamel.push(t.replace(t[0], t[0].toUpperCase()));
+// //   }
 
-// textFunc('ali_Reza');
-// textFunc(
-//   'underscore_case\nfirst_name\nSome_Variable\ncalculate_AGE\ndelayed_departure'
-// );
+// //   const newStr = strCamel
+// //     .join('')
+// //     .replace(strCamel[0], strCamel[0].toLowerCase());
+
+// //   for (const i of newStr) {
+// //     i.padStart(25, "+");
+// //     console.log(i);
+// //   }
+// //   strArr.push(newStr.split('\n'));
+// //   console.log(strArr);
+// //   console.log(newStr);
+
+// //   // console.log(strCamel);
+// //   // console.log(newStr);
+// // };
+
+// // textFunc('ali_Reza');
+// // textFunc(
+// //   'underscore_case\nfirst_name\nSome_Variable\ncalculate_AGE\ndelayed_departure'
+// // );
 
 //////////////////////////////////////////////////
 // Strings Part-3
