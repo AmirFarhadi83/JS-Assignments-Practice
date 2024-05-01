@@ -1,10 +1,33 @@
 'use strict';
 
 //////////////////////////////////////////////////
-// 005
+// 006
 //////////////////////////////////////////////////
 
+const oneWord = function (str) {
+  return str.replaceAll(' ', '').toLowerCase();
+};
 
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(' ');
+  return [first.toUpperCase(), ...others].join(' ');
+};
+
+// Higher-Order function
+const transformer = function (str, fn) {
+  console.log('______________________________');
+  console.log(`Original String: ${str}`);
+  console.log(`Transformed String: ${fn(str)}`);
+  console.log(`Transformed By: ${fn.name}`);
+};
+
+transformer('JavaScript is the best!', upperFirstWord);
+transformer('JavaScript is the best!', oneWord);
+
+// Js uses callbacks all the time
+const high5 = () => console.log('🖐🏻');
+document.body.addEventListener('click', high5);
+['ali', 'reza', 'amir'].forEach(high5);
 
 //////////////////////////////////////////////////
 // 004
