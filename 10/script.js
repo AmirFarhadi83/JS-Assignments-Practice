@@ -43,7 +43,7 @@ const swiss = {
 book.call(swiss, 786, 'Sara Rezaei');
 
 // Apply method
-const flightData = [786, 'Ali Rezaei']
+const flightData = [786, 'Ali Rezaei'];
 book.apply(swiss, flightData);
 
 book.call(swiss, ...flightData);
