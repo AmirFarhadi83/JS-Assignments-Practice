@@ -4,20 +4,20 @@
 // 007
 //////////////////////////////////////////////////
 
-// const greet = function (greeting) {
-//   return function (name) {
-//     console.log(`${greeting} ${name}`);
-//   };
-// };
+// // const greet = function (greeting) {
+// //   return function (name) {
+// //     console.log(`${greeting} ${name}`);
+// //   };
+// // };
 
-const greet = greeting => name => console.log(`${greeting} ${name}`);
+// const greet = greeting => name => console.log(`${greeting} ${name}`);
 
-const greeterHey = greet('Hey');
+// const greeterHey = greet('Hey');
 
-greeterHey('Amir');
-greeterHey('Ali');
+// greeterHey('Amir');
+// greeterHey('Ali');
 
-greet('Hello')('Amir');
+// greet('Hello')('Amir');
 
 //////////////////////////////////////////////////
 // 006
