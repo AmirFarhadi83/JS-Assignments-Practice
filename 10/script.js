@@ -4,7 +4,50 @@
 // 008
 //////////////////////////////////////////////////
 
+const iranAir = {
+  airline: 'Iran Air',
+  iataCode: 'IR',
+  bookings: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}, ${name}` });
+  },
+};
 
+iranAir.book(239, 'Amir Farhadi');
+iranAir.book(293, 'Ali Mohammadi');
+console.log(iranAir);
+
+const mahanAir = {
+  airline: 'Mahan Air',
+  iataCode: 'IR',
+  bookings: [],
+};
+
+const book = iranAir.book;
+
+// Call method
+book.call(iranAir, 56, 'Reza Zavar');
+console.log(iranAir);
+book.call(mahanAir, 98, 'Hossein Kamali');
+console.log(mahanAir);
+
+const swiss = {
+  airline: 'Swiss Airline',
+  iataCode: 'LX',
+  bookings: [],
+};
+
+book.call(swiss, 786, 'Sara Rezaei');
+
+// Apply method
+const flightData = [786, 'Ali Rezaei']
+book.apply(swiss, flightData);
+
+book.call(swiss, ...flightData);
+console.log(swiss);
 
 //////////////////////////////////////////////////
 // 007
