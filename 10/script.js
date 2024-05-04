@@ -4,7 +4,55 @@
 // 009
 //////////////////////////////////////////////////
 
+const iranAir = {
+  airline: 'Iran Air',
+  iataCode: 'IR',
+  bookings: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}, ${name}` });
+  },
+};
 
+const swiss = {
+  airline: 'Swiss Airline',
+  iataCode: 'LX',
+  bookings: [],
+};
+
+const mahanAir = {
+  airline: 'Mahan Air',
+  iataCode: 'IR',
+  bookings: [],
+};
+
+const book = iranAir.book;
+
+// bind
+
+const bookIR = book.bind(iranAir);
+const bookLX = book.bind(swiss);
+
+bookLX(23, 'Ali Rezaei');
+
+const bookIR23 = book.bind(iranAir, 23);
+bookIR23('Amir Farhadi');
+
+// with event listeners
+iranAir.planes = 300;
+iranAir.buyPlane = function () {
+  console.log(this);
+
+  this.planes++;
+  console.log(this.planes);
+};
+// iranAir.buyPlane();
+
+document.querySelector('.buy').addEventListener('click', iranAir.buyPlane.bind(iranAir));
+
+// partial application
 
 //////////////////////////////////////////////////
 // 008
