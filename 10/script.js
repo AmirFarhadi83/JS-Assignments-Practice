@@ -50,9 +50,30 @@ iranAir.buyPlane = function () {
 };
 // iranAir.buyPlane();
 
-document.querySelector('.buy').addEventListener('click', iranAir.buyPlane.bind(iranAir));
+document
+  .querySelector('.buy')
+  .addEventListener('click', iranAir.buyPlane.bind(iranAir));
 
 // partial application
+
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 300));
+
+const addVAT = addTax.bind(null, 0.23);
+// addVAT = value => value + value * 0.23;
+
+// const func = function (value) {
+//   return addVAT(value);
+// };
+
+// console.log(func(300));
+
+const func2 = rate => value => value + value * rate;
+
+const addVAT2 = func2(0.23);
+
+console.log(addVAT2(100));
+console.log(addVAT2(330));
 
 //////////////////////////////////////////////////
 // 008
