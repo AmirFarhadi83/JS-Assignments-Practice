@@ -4,27 +4,27 @@
 // 011
 //////////////////////////////////////////////////
 
-const runOnce = function () {
-  console.log('nnnnnnnnn');
-};
-runOnce();
+// const runOnce = function () {
+//   console.log('nnnnnnnnn');
+// };
+// runOnce();
 
-// IIFE
-(function () {
-  console.log('ssssssssss');
-  // var isPrivate = 33;
-  const isPrivate = 33;
-})();
+// // IIFE
+// (function () {
+//   console.log('ssssssssss');
+//   // var isPrivate = 33;
+//   const isPrivate = 33;
+// })();
 
-(() => console.log('hhhhhhhhhhhhh'))();
+// (() => console.log('hhhhhhhhhhhhh'))();
 
-{
-  const isPrivate = 33;
-  var notPrivate = 46;
-}
-// console.log(isPrivate);
+// {
+//   const isPrivate = 33;
+//   var notPrivate = 46;
+// }
+// // console.log(isPrivate);
 
-console.log(notPrivate);
+// console.log(notPrivate);
 
 //////////////////////////////////////////////////
 // Coding Challenge #1
