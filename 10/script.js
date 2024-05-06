@@ -4,7 +4,27 @@
 // 011
 //////////////////////////////////////////////////
 
+// const runOnce = function () {
+//   console.log('nnnnnnnnn');
+// };
+// runOnce();
 
+// // IIFE
+// (function () {
+//   console.log('ssssssssss');
+//   // var isPrivate = 33;
+//   const isPrivate = 33;
+// })();
+
+// (() => console.log('hhhhhhhhhhhhh'))();
+
+// {
+//   const isPrivate = 33;
+//   var notPrivate = 46;
+// }
+// // console.log(isPrivate);
+
+// console.log(notPrivate);
 
 //////////////////////////////////////////////////
 // Coding Challenge #1
@@ -47,7 +67,7 @@
 // document
 //   .querySelector('.poll')
 //     .addEventListener('click', poll.registerNewAnswer.bind(poll));
-  
+
 // // 4.
 // // poll.displayResults.call({answers:[1,5,3]})
 
