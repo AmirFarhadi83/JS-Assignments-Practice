@@ -5,11 +5,60 @@
 //////////////////////////////////////////////////
 
 const poll = {
-  question: 'What is your favourite programming language?',
+  question: 'What is your favorite programming language?',
   options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
   // This generates [0, 0, 0, 0]. More in the next section!
   answers: new Array(4).fill(0),
+  registerNewAnswer() {
+    const answer = Number(
+      prompt(
+        `${this.question}\n${this.options.join('\n')}\n(Write Option Number)`
+      )
+    );
+    typeof answer === 'number' &&
+      answer < this.answers.length &&
+      this.answers[answer]++;
+    // console.log(poll.answers);
+    this.displayResults();
+  },
+  displayResults() {
+    const type = prompt('String or Array');
+    // console.log(
+    //   type.toLowerCase() !== 'string'
+    //     ? this.answers
+    //     : `Poll results are ${this.answers.join(', ')}`
+    // );
+    if (type.toLowerCase() === 'string') {
+      console.log(`Poll results are ${this.answers.join(', ')}`);
+    } else if (type.toLowerCase() === 'array') {
+      console.log(`Result: ${this.answers}`);
+    } else {
+      console.log('Format Not Support');
+    }
+  },
 };
+
+document
+  .querySelector('.poll')
+    .addEventListener('click', poll.registerNewAnswer.bind(poll));
+  
+// 4.
+// poll.displayResults.call({answers:[1,5,3]})
+
+// Bonus
+// const register = poll.registerNewAnswer.bind(poll);
+// register([5, 2, 3])
+
+//   displayResults(arr) {
+//     const type = prompt('String or Array');
+//     if (type.toLowerCase() === 'string') {
+//       console.log(`Poll results are ${arr.join(', ')}`);
+//     } else if (type.toLowerCase() === 'array') {
+//       console.log(`Result: ${arr}`);
+//     } else {
+//       console.log('Format Not Support');
+//     }
+//   },
 
 //////////////////////////////////////////////////
 // 009
