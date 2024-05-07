@@ -209,19 +209,19 @@ displayMovements(account1.movements);
 // Coding Challenge #1
 /////////////////////////////////////////////////
 
-const checkDogs = function (dogsJulia, dogsKate) {
-  const dogsJuliaDog = dogsJulia.slice(1, -2);
-  const allDogs = dogsJuliaDog.concat(dogsKate);
-  allDogs.forEach(function (dog, i) {
-    const adPup =
-      dog >= 3
-        ? `Dog number ${i + 1} is an adult, and is ${dog} years old`
-        : `Dog number ${i + 1} is still a puppy`;
-    console.log(adPup);
-  });
-};
+// const checkDogs = function (dogsJulia, dogsKate) {
+//   const dogsJuliaDog = dogsJulia.slice(1, -2);
+//   const allDogs = dogsJuliaDog.concat(dogsKate);
+//   allDogs.forEach(function (dog, i) {
+//     const adPup =
+//       dog >= 3
+//         ? `Dog number ${i + 1} is an adult, and is ${dog} years old`
+//         : `Dog number ${i + 1} is still a puppy`;
+//     console.log(adPup);
+//   });
+// };
 
-checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
-checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
-// Data 1: Julia's data [3, 5, 2, 12, 7], Kate's data [4, 1, 15, 8, 3]
-// § Data 2: Julia's data [9, 16, 6, 8, 3], Kate's data [10, 5, 6, 1, 4]
+// checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
+// checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
+// // Data 1: Julia's data [3, 5, 2, 12, 7], Kate's data [4, 1, 15, 8, 3]
+// // § Data 2: Julia's data [9, 16, 6, 8, 3], Kate's data [10, 5, 6, 1, 4]
