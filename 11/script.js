@@ -118,15 +118,15 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // 004
 /////////////////////////////////////////////////
 
-// AT
-const arr = [23, 11, 64]
-console.log(arr[0]);
-console.log(arr.at(0));
+// // AT
+// const arr = [23, 11, 64]
+// console.log(arr[0]);
+// console.log(arr.at(0));
 
-// getting last array element
-console.log(arr[arr.length-1]);
-console.log(arr.slice(-1)[0]);
-console.log(arr.at(-1));
+// // getting last array element
+// console.log(arr[arr.length-1]);
+// console.log(arr.slice(-1)[0]);
+// console.log(arr.at(-1));
 
-console.log('amir'.at(0));
-console.log('amir'.at(-1));
+// console.log('amir'.at(0));
+// console.log('amir'.at(-1));
