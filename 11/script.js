@@ -230,26 +230,26 @@ displayMovements(account1.movements);
 // 011
 /////////////////////////////////////////////////
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-const eurToUsd = 1.1;
+// const eurToUsd = 1.1;
 
-// const movementsUSD = movements.map(function (mov) {
-//   return mov * eurToUsd;
-// });
-const movementsUSD = movements.map(mov => mov * eurToUsd);
-console.log(movements);
-console.log(movementsUSD);
+// // const movementsUSD = movements.map(function (mov) {
+// //   return mov * eurToUsd;
+// // });
+// const movementsUSD = movements.map(mov => mov * eurToUsd);
+// console.log(movements);
+// console.log(movementsUSD);
 
-const movementsUSDfor = [];
-for (const mov of movements) movementsUSDfor.push(mov * eurToUsd);
-console.log(movementsUSDfor);
+// const movementsUSDfor = [];
+// for (const mov of movements) movementsUSDfor.push(mov * eurToUsd);
+// console.log(movementsUSDfor);
 
-const movementDesc = movements.map(
-  (mov, i) =>
-    `Movement ${i + 1}: you ${mov > 0 ? 'deposited' : 'Withdrew'} ${Math.abs(
-      mov
-    )}`
-);
+// const movementDesc = movements.map(
+//   (mov, i) =>
+//     `Movement ${i + 1}: you ${mov > 0 ? 'deposited' : 'Withdrew'} ${Math.abs(
+//       mov
+//     )}`
+// );
 
-console.log(movementDesc);
+// console.log(movementDesc);
