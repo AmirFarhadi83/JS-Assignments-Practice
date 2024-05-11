@@ -393,12 +393,12 @@ createUsernames(accounts);
 // Coding Challenge #3
 /////////////////////////////////////////////////
 
-const calcAverageHumanAge = ages =>
-  ages
-    .map(age => (age <= 2 ? 2 * age : 16 + age * 4))
-    .filter(age => age >= 18)
-    .reduce((acc, age, i, arr) => acc + age / arr.length, 0);
+// const calcAverageHumanAge = ages =>
+//   ages
+//     .map(age => (age <= 2 ? 2 * age : 16 + age * 4))
+//     .filter(age => age >= 18)
+//     .reduce((acc, age, i, arr) => acc + age / arr.length, 0);
 
-const ave1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
-const ave2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
-console.log(ave1, '---', ave2);
+// const ave1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+// const ave2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+// console.log(ave1, '---', ave2);
