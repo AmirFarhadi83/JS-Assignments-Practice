@@ -402,3 +402,8 @@ createUsernames(accounts);
 // const ave1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
 // const ave2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
 // console.log(ave1, '---', ave2);
+
+/////////////////////////////////////////////////
+// 018
+/////////////////////////////////////////////////
+
