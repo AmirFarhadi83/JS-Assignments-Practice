@@ -688,3 +688,73 @@ btnClose.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 // Coding Challenge #4
 /////////////////////////////////////////////////
+
+const dogs = [
+  { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
+  { weight: 8, curFood: 200, owners: ['Matilda'] },
+  { weight: 13, curFood: 275, owners: ['Sarah', 'John'] },
+  { weight: 32, curFood: 340, owners: ['Michael'] },
+];
+
+// 1.
+const newDogs = dogs.map(dog => ({
+  ...dog,
+  recommendedFood: Math.trunc(dog.weight ** 0.75 * 28),
+}));
+
+// 2.
+console.log('------- 2 -------');
+
+newDogs.filter(dog => dog.owners.includes('Sarah') && console.log(dog));
+
+// 3.
+const tooMuch = dog => dog.curFood > dog.recommendedFood * 0.9;
+const tooLittle = dog => dog.curFood < dog.recommendedFood * 1.1;
+
+const { ownersEatTooMuch, ownersEatTooLittle } = newDogs.reduce(
+  (temps, dog) => {
+    tooMuch(dog)
+      ? temps.ownersEatTooMuch.push(dog)
+      : tooLittle(dog) && temps.ownersEatTooLittle.push(dog);
+    return temps;
+  },
+  { ownersEatTooMuch: [], ownersEatTooLittle: [] }
+);
+
+// 4.
+console.log('------- 4 -------');
+
+const dogOwners = dog => dog.owners;
+
+console.log(
+  `${ownersEatTooMuch.map(
+    dogOwners
+  )}'s dogs eat too much! and ${ownersEatTooLittle.map(
+    dogOwners
+  )}'s dogs eat too little!`
+);
+
+// 5.
+console.log('------- 5 -------');
+
+newDogs.some(dog => console.log(dog.curFood === dog.recommendedFood));
+
+// 6.
+console.log('------- 6 -------');
+
+newDogs.some(dog => console.log(tooMuch(dog) && tooLittle(dog)));
+
+// 7.
+const { goodDogs } = newDogs.reduce(
+  (arr, dog) => {
+    tooMuch(dog) && tooLittle(dog) && arr.goodDogs.push(dog);
+    return arr;
+  },
+  { goodDogs: [] }
+);
+
+console.log(goodDogs);
+
+// 8.
+const sortDogs = newDogs.map(dog => dog.recommendedFood).sort((a, b) => a - b);
+console.log(sortDogs);
