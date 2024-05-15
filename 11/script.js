@@ -590,7 +590,7 @@ btnClose.addEventListener('click', function (e) {
 //   });
 
 /////////////////////////////////////////////////
-// 024
+// 025
 /////////////////////////////////////////////////
 
 // const arr = [1, 2, 3, 4, 5, 6, 7];
@@ -621,3 +621,8 @@ btnClose.addEventListener('click', function (e) {
 //   console.log(movementsUI);
 //   const movementsUI2 = [...document.querySelectorAll('.movements__value')];
 // });
+
+/////////////////////////////////////////////////
+// 027
+/////////////////////////////////////////////////
+
