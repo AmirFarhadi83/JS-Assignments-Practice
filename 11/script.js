@@ -575,3 +575,16 @@ btnClose.addEventListener('click', function (e) {
 //   .flatMap(acc => acc.movements)
 //   .reduce((acc, mov) => acc + mov, 0);
 // console.log(overallBalance2);
+
+/////////////////////////////////////////////////
+// test for api
+/////////////////////////////////////////////////
+
+// const listEl = document.querySelector('ul');
+// fetch('https://fakestoreapi.com/products')
+//   .then(res => res.json)
+//   .then(data => {
+//     data.map(e => {
+//       listEl.innerHTML += `<li>${e.title}</li>`;
+//     });
+//   });
